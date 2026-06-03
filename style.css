@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +9,18 @@ body {
     background: #f2f2f2;
 }
 
-/* ===== MENÚ DENTRO DE CUADRO CAFÉ ===== */
+
 .menu-wrapper {
     background: #c49a3a;
-    /* fondo café/dorado general */
-    padding: 8px 12px;
-    /* espacio alrededor del cuadro */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
     display: inline-flex;
-    /* el cuadro abraza solo los links */
     background: #c49a3a;
-    /* interior del cuadro también café */
     border: 2px solid #8b6914;
-    /* borde café oscuro que marca el cuadro */
     border-radius: 4px;
     overflow: hidden;
 }
@@ -37,7 +33,6 @@ body {
     font-weight: bold;
     font-size: 14px;
     border-right: 1px solid #a97d2b;
-    /* separador entre links */
     transition: background 0.2s;
 }
 
@@ -49,16 +44,16 @@ body {
     background: #a97d2b;
 }
 
-/* "Alta" resaltado en verde igual que la imagen */
-.menu a.alta {
+.menu a.activo {
     background: #4a7a2e;
+    color: #fff;
 }
 
-.menu a.alta:hover {
+.menu a.activo:hover {
     background: #3a6020;
 }
 
-/* ===== CUADRO DEL FORMULARIO ===== */
+
 .contenedor {
     width: 420px;
     margin: 40px auto;
@@ -68,7 +63,6 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-/* Línea azul a la izquierda del título (igual a la foto) */
 .contenedor h2 {
     font-size: 18px;
     font-weight: 600;
@@ -78,7 +72,6 @@ body {
     margin-bottom: 24px;
 }
 
-/* ===== LABELS ===== */
 label {
     display: block;
     font-size: 13px;
@@ -87,7 +80,6 @@ label {
     margin-top: 14px;
 }
 
-/* ===== INPUTS ===== */
 input {
     width: 100%;
     padding: 9px 10px;
@@ -104,7 +96,6 @@ input:focus {
     background: #fff;
 }
 
-/* ===== MENSAJE ===== */
 .mensaje {
     font-size: 13px;
     color: #555;
@@ -113,11 +104,9 @@ input:focus {
     line-height: 1.5;
 }
 
-/* ===== BOTÓN ===== */
 button {
     display: block;
     margin-left: auto;
-    /* alineado a la derecha como en la foto */
     padding: 10px 24px;
     background: #2a9df4;
     color: white;
